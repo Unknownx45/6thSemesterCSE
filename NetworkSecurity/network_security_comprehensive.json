@@ -1,0 +1,785 @@
+{
+  "course_info": {
+    "code": "157610",
+    "name": "Network Security",
+    "credits": "3003",
+    "total_hours": 42,
+    "units": 6
+  },
+  "units": [
+    {
+      "id": 1,
+      "title": "Introduction to Network Security",
+      "hours": 7,
+      "topics": [
+        "Security fundamentals",
+        "Security threats and attack vectors",
+        "Vulnerability assessment",
+        "Security policies and risk management",
+        "Overview of cybersecurity frameworks"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Network Security? Explain its fundamentals and importance.",
+          "definition": "Network Security is the practice of protecting computer networks from unauthorized access, misuse, or attacks. It encompasses policies, procedures, and technologies used to protect the integrity, confidentiality, and availability of computer networks and their resources.",
+          "key_points": [
+            "CIA Triad: Confidentiality, Integrity, Availability",
+            "Protects sensitive information and user data",
+            "Prevents unauthorized access to critical systems",
+            "Ensures regulatory compliance (GDPR, HIPAA, PCI-DSS)",
+            "Maintains business continuity and prevents financial losses"
+          ],
+          "examples": [
+            "Firewalls",
+            "Encryption",
+            "Access controls",
+            "Intrusion detection systems"
+          ],
+          "visual_tip": "Think of it as Digital Bodyguards: \ud83d\udee1\ufe0f Firewalls = Security Guards, \ud83d\udd10 Encryption = Secret Codes, \ud83d\udc6e Access Control = ID Badges"
+        },
+        {
+          "id": 2,
+          "question": "What are Security Threats and Attack Vectors? Explain with examples.",
+          "definition": "Security threats are potential dangers that could compromise network resources. Attack vectors are methods used by attackers to gain unauthorized access.",
+          "threat_table": [
+            {
+              "type": "Malware",
+              "description": "Malicious software",
+              "examples": [
+                "Viruses",
+                "Ransomware",
+                "Trojans",
+                "Worms"
+              ]
+            },
+            {
+              "type": "Phishing",
+              "description": "Deceiving users",
+              "examples": [
+                "Fake emails",
+                "Fraudulent websites",
+                "Social engineering"
+              ]
+            },
+            {
+              "type": "DoS/DDoS",
+              "description": "Denial of service",
+              "examples": [
+                "Traffic flooding",
+                "Resource exhaustion",
+                "Botnet attacks"
+              ]
+            },
+            {
+              "type": "Man-in-the-Middle",
+              "description": "Intercepting communications",
+              "examples": [
+                "Eavesdropping",
+                "Session hijacking",
+                "WiFi sniffing"
+              ]
+            }
+          ],
+          "attack_vectors": [
+            "Social Engineering",
+            "Compromised Credentials",
+            "Email Attachments",
+            "Unpatched Vulnerabilities",
+            "Insider Threats"
+          ],
+          "visual_tip": "Attack Vectors = Different doors criminals use to break into your digital house \ud83c\udfe0\ud83d\udeaa"
+        },
+        {
+          "id": 3,
+          "question": "What is Vulnerability Assessment? Explain its process and methodology.",
+          "definition": "Vulnerability Assessment is a systematic review of security weaknesses in information systems to identify, classify, and prioritize vulnerabilities.",
+          "process_steps": [
+            "1. Planning and Scoping: Define objectives, targets, and assessment scope",
+            "2. Discovery: Collect information about systems, hosts, and software",
+            "3. Scanning: Use automated tools to identify vulnerabilities",
+            "4. Analysis: Evaluate scan results and remove false positives",
+            "5. Reporting: Document findings with remediation recommendations",
+            "6. Remediation: Apply fixes and security improvements",
+            "7. Re-assessment: Verify fixes and continuous monitoring"
+          ],
+          "types": [
+            "Network-based",
+            "Host-based",
+            "Application-based",
+            "Wireless"
+          ],
+          "tools": [
+            "Nessus",
+            "OpenVAS",
+            "Qualys",
+            "Rapid7"
+          ],
+          "visual_tip": "Like a health checkup for your network: \ud83e\ude7a Scan \u2192 \ud83d\udccb Diagnose \u2192 \ud83d\udc8a Treat \u2192 \u2705 Verify"
+        },
+        {
+          "id": 4,
+          "question": "Explain Security Policies and Risk Management framework.",
+          "definition": "Security policies provide high-level directives for protecting organizational assets. Risk management is the process of identifying, assessing, and mitigating security risks.",
+          "policy_components": [
+            "Acceptable Use Policy (AUP)",
+            "Password Policy",
+            "Incident Response Policy",
+            "Data Classification Policy",
+            "Access Control Policy"
+          ],
+          "risk_process": [
+            "1. Risk Identification: Identify potential threats and vulnerabilities",
+            "2. Risk Assessment: Analyze likelihood and impact",
+            "3. Risk Treatment: Accept, Transfer, Mitigate, or Avoid",
+            "4. Risk Monitoring: Continuous assessment and review"
+          ],
+          "visual_tip": "Risk Management = Insurance for your digital assets \ud83d\udee1\ufe0f\ud83d\udcbc"
+        },
+        {
+          "id": 5,
+          "question": "Compare NIST Cybersecurity Framework and ISO 27001 standard.",
+          "definition": "Both are cybersecurity frameworks but serve different purposes - NIST CSF is a voluntary framework, while ISO 27001 is a certifiable international standard.",
+          "comparison_table": [
+            {
+              "aspect": "Type",
+              "nist": "Voluntary framework",
+              "iso": "Certifiable standard"
+            },
+            {
+              "aspect": "Origin",
+              "nist": "US Government (NIST)",
+              "iso": "International (ISO)"
+            },
+            {
+              "aspect": "Structure",
+              "nist": "5 Functions (Identify, Protect, Detect, Respond, Recover)",
+              "iso": "ISMS with 14 control domains"
+            },
+            {
+              "aspect": "Focus",
+              "nist": "Risk-based approach",
+              "iso": "Management system approach"
+            },
+            {
+              "aspect": "Certification",
+              "nist": "No formal certification",
+              "iso": "Third-party certification available"
+            }
+          ],
+          "nist_functions": [
+            "Identify",
+            "Protect",
+            "Detect",
+            "Respond",
+            "Recover"
+          ],
+          "iso_principles": [
+            "Confidentiality",
+            "Integrity",
+            "Availability"
+          ],
+          "visual_tip": "NIST = Toolkit \ud83e\uddf0, ISO = Recipe Book \ud83d\udcd6 - Both help cook secure systems!"
+        },
+        {
+          "id": 6,
+          "question": "Differentiate between Threat, Vulnerability, and Risk with examples.",
+          "definitions": {
+            "threat": "Potential harm or danger that could exploit a vulnerability",
+            "vulnerability": "Weakness or flaw in a system that can be exploited",
+            "risk": "Likelihood and impact of a threat exploiting a vulnerability"
+          },
+          "examples_table": [
+            {
+              "threat": "Hacker",
+              "vulnerability": "Unpatched software",
+              "risk": "Data breach with financial loss"
+            },
+            {
+              "threat": "Malware",
+              "vulnerability": "No antivirus",
+              "risk": "System compromise and downtime"
+            },
+            {
+              "threat": "Insider",
+              "vulnerability": "Excessive privileges",
+              "risk": "Data theft or sabotage"
+            }
+          ],
+          "formula": "Risk = Threat \u00d7 Vulnerability \u00d7 Impact",
+          "visual_tip": "Think of a house: \ud83c\udfe0 Threat = Burglar, Vulnerability = Unlocked door, Risk = Stolen valuables"
+        },
+        {
+          "id": 7,
+          "question": "What are the types of Security Controls? Explain with examples.",
+          "definition": "Security controls are safeguards implemented to reduce security risks and protect assets.",
+          "control_types": [
+            {
+              "type": "Preventive",
+              "purpose": "Prevent incidents",
+              "examples": [
+                "Firewalls",
+                "Access controls",
+                "Encryption",
+                "Training"
+              ]
+            },
+            {
+              "type": "Detective",
+              "purpose": "Detect incidents",
+              "examples": [
+                "IDS/IPS",
+                "Log monitoring",
+                "Audits",
+                "CCTV"
+              ]
+            },
+            {
+              "type": "Corrective",
+              "purpose": "Respond to incidents",
+              "examples": [
+                "Incident response",
+                "System recovery",
+                "Patches",
+                "Backups"
+              ]
+            }
+          ],
+          "by_nature": [
+            {
+              "type": "Administrative",
+              "examples": [
+                "Policies",
+                "Procedures",
+                "Training"
+              ]
+            },
+            {
+              "type": "Technical",
+              "examples": [
+                "Firewalls",
+                "Encryption",
+                "Authentication"
+              ]
+            },
+            {
+              "type": "Physical",
+              "examples": [
+                "Locks",
+                "Guards",
+                "Cameras"
+              ]
+            }
+          ],
+          "visual_tip": "Security Controls = Layers of an onion \ud83e\uddc5: Each layer adds protection!"
+        },
+        {
+          "id": 8,
+          "question": "Explain the Incident Response process and its phases.",
+          "definition": "Incident Response is a structured approach to addressing and managing security breaches or cyberattacks.",
+          "phases": [
+            "1. Preparation: Establish IR team, procedures, and tools",
+            "2. Identification: Detect and analyze potential incidents",
+            "3. Containment: Limit damage and prevent spread",
+            "4. Eradication: Remove threat and fix vulnerabilities",
+            "5. Recovery: Restore systems and monitor for issues",
+            "6. Lessons Learned: Review and improve IR process"
+          ],
+          "key_roles": [
+            "IR Manager",
+            "Security Analyst",
+            "Forensics Expert",
+            "Communications Lead"
+          ],
+          "tools": [
+            "SIEM",
+            "Forensic tools",
+            "Communication platforms",
+            "Documentation systems"
+          ],
+          "visual_tip": "Like emergency response: \ud83d\udea8 Detect \u2192 \ud83d\ude91 Contain \u2192 \ud83d\udd27 Fix \u2192 \ud83d\udcdd Learn"
+        },
+        {
+          "id": 9,
+          "question": "What is Business Continuity Planning (BCP) and Disaster Recovery (DR)?",
+          "definitions": {
+            "bcp": "Processes and procedures to ensure business operations continue during and after a disruptive event",
+            "dr": "Technical processes to recover IT systems and data after a disaster"
+          },
+          "key_concepts": [
+            "RTO (Recovery Time Objective): Maximum acceptable downtime",
+            "RPO (Recovery Point Objective): Maximum acceptable data loss",
+            "BIA (Business Impact Analysis): Assessment of critical business functions"
+          ],
+          "dr_strategies": [
+            "Hot site",
+            "Warm site",
+            "Cold site",
+            "Cloud backup"
+          ],
+          "testing_types": [
+            "Tabletop exercises",
+            "Walkthrough tests",
+            "Full interruption tests"
+          ],
+          "visual_tip": "BCP/DR = Having spare tires and roadside assistance for your business journey \ud83d\ude97\ud83d\udede"
+        },
+        {
+          "id": 10,
+          "question": "Explain Security Awareness Training and its importance.",
+          "definition": "Security Awareness Training educates employees about cybersecurity threats and best practices to reduce human-related security risks.",
+          "importance": [
+            "Humans are often the weakest link in security",
+            "95% of successful cyberattacks are due to human error",
+            "Reduces susceptibility to social engineering",
+            "Creates security-conscious culture"
+          ],
+          "training_topics": [
+            "Password security and MFA",
+            "Phishing identification",
+            "Social engineering tactics",
+            "Safe browsing practices",
+            "Incident reporting procedures"
+          ],
+          "methods": [
+            "E-learning modules",
+            "Phishing simulations",
+            "Security newsletters",
+            "Workshops"
+          ],
+          "metrics": [
+            "Training completion rates",
+            "Phishing simulation results",
+            "Incident reduction"
+          ],
+          "visual_tip": "Security training = Teaching people to be human firewalls \ud83d\udc65\ud83d\udee1\ufe0f"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cryptography and Key Management",
+      "hours": 7,
+      "topics": [
+        "Symmetric key cryptography (DES, AES, RC4)",
+        "Asymmetric key cryptography (RSA, ECC)",
+        "Key exchange algorithms",
+        "Hash functions (SHA, MD5)",
+        "Digital signatures and certificates"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question": "Explain Symmetric Key Cryptography. Compare DES, AES, and RC4.",
+          "definition": "Symmetric cryptography uses the same key for both encryption and decryption. Both sender and receiver must possess the same secret key.",
+          "comparison_table": [
+            {
+              "algorithm": "DES",
+              "key_size": "56 bits",
+              "block_size": "64 bits",
+              "structure": "Feistel Network",
+              "rounds": "16",
+              "status": "Deprecated (insecure)"
+            },
+            {
+              "algorithm": "AES",
+              "key_size": "128/192/256 bits",
+              "block_size": "128 bits",
+              "structure": "Substitution-Permutation",
+              "rounds": "10/12/14",
+              "status": "Current standard"
+            },
+            {
+              "algorithm": "RC4",
+              "key_size": "Variable (40-2048 bits)",
+              "block_size": "Stream cipher",
+              "structure": "Stream cipher",
+              "rounds": "N/A",
+              "status": "Deprecated"
+            }
+          ],
+          "advantages": [
+            "Fast encryption/decryption",
+            "Less computational overhead",
+            "Suitable for bulk data"
+          ],
+          "disadvantages": [
+            "Key distribution problem",
+            "Key management complexity",
+            "No non-repudiation"
+          ],
+          "visual_tip": "Symmetric = Same key for lock and unlock \ud83d\udddd\ufe0f\ud83d\udd10 (like house key)"
+        },
+        {
+          "id": 2,
+          "question": "Explain Asymmetric Key Cryptography. Compare RSA and ECC algorithms.",
+          "definition": "Asymmetric cryptography uses a pair of mathematically related keys - public key for encryption, private key for decryption.",
+          "comparison_table": [
+            {
+              "aspect": "Basis",
+              "rsa": "Prime factorization",
+              "ecc": "Elliptic curve mathematics"
+            },
+            {
+              "aspect": "Key Size (equivalent security)",
+              "rsa": "2048-4096 bits",
+              "ecc": "256-521 bits"
+            },
+            {
+              "aspect": "Performance",
+              "rsa": "Slower",
+              "ecc": "Faster"
+            },
+            {
+              "aspect": "Power Consumption",
+              "rsa": "Higher",
+              "ecc": "Lower"
+            },
+            {
+              "aspect": "Compatibility",
+              "rsa": "Widely supported",
+              "ecc": "Growing support"
+            }
+          ],
+          "rsa_process": [
+            "1. Choose two large prime numbers (p, q)",
+            "2. Compute n = p \u00d7 q",
+            "3. Calculate \u03c6(n) = (p-1)(q-1)",
+            "4. Choose public exponent e",
+            "5. Calculate private exponent d"
+          ],
+          "ecc_advantages": [
+            "Smaller keys",
+            "Faster operations",
+            "Lower bandwidth",
+            "Better for mobile/IoT"
+          ],
+          "visual_tip": "Asymmetric = Mailbox system \ud83d\udcee (Public slot to put mail, Private key to retrieve)"
+        },
+        {
+          "id": 3,
+          "question": "Explain Diffie-Hellman Key Exchange algorithm and its significance.",
+          "definition": "Diffie-Hellman is a key exchange protocol that allows two parties to establish a shared secret key over an insecure channel without prior communication.",
+          "process_steps": [
+            "1. Agree on public parameters: prime p and generator g",
+            "2. Alice chooses private key 'a', computes A = g^a mod p",
+            "3. Bob chooses private key 'b', computes B = g^b mod p",
+            "4. Exchange public values A and B",
+            "5. Alice computes shared secret: K = B^a mod p",
+            "6. Bob computes shared secret: K = A^b mod p"
+          ],
+          "significance": [
+            "First practical key exchange protocol",
+            "Enables secure communication without pre-shared keys",
+            "Foundation for many modern protocols (TLS, IPSec)",
+            "Provides Perfect Forward Secrecy"
+          ],
+          "vulnerabilities": [
+            "Man-in-the-middle attacks",
+            "Small subgroup attacks",
+            "Invalid curve attacks"
+          ],
+          "variants": [
+            "ECDH (Elliptic Curve DH)",
+            "DHE (Ephemeral DH)"
+          ],
+          "visual_tip": "Like mixing paint colors: \ud83c\udfa8 Each person adds secret color, final mixture is shared secret!"
+        },
+        {
+          "id": 4,
+          "question": "What are Hash Functions? Compare MD5, SHA-1, and SHA-256.",
+          "definition": "Hash functions are mathematical algorithms that take input data of any size and produce a fixed-size hash value (digest). They are one-way functions designed to be irreversible.",
+          "properties": [
+            "Deterministic: Same input produces same output",
+            "Fast computation: Quick to calculate hash",
+            "Avalanche effect: Small input change causes large output change",
+            "Pre-image resistance: Hard to find input from hash",
+            "Collision resistance: Hard to find two inputs with same hash"
+          ],
+          "comparison_table": [
+            {
+              "algorithm": "MD5",
+              "output_size": "128 bits",
+              "year": "1991",
+              "status": "Broken",
+              "vulnerability": "Collision attacks",
+              "use_case": "Checksums only"
+            },
+            {
+              "algorithm": "SHA-1",
+              "output_size": "160 bits",
+              "year": "1995",
+              "status": "Deprecated",
+              "vulnerability": "Collision attacks",
+              "use_case": "Legacy systems"
+            },
+            {
+              "algorithm": "SHA-256",
+              "output_size": "256 bits",
+              "year": "2001",
+              "status": "Secure",
+              "vulnerability": "None known",
+              "use_case": "Digital signatures, blockchain"
+            }
+          ],
+          "applications": [
+            "Digital signatures",
+            "Password storage",
+            "Data integrity",
+            "Blockchain mining"
+          ],
+          "visual_tip": "Hash = Digital fingerprint \ud83d\udc46 - Unique identifier for any data!"
+        },
+        {
+          "id": 5,
+          "question": "Explain Public Key Infrastructure (PKI). What are its main components?",
+          "definition": "PKI is a framework for managing public-key encryption and digital certificates, providing secure communication and authentication in digital environments.",
+          "components": [
+            {
+              "component": "Certificate Authority (CA)",
+              "function": "Issues and manages digital certificates",
+              "example": "VeriSign, DigiCert"
+            },
+            {
+              "component": "Registration Authority (RA)",
+              "function": "Verifies identity before certificate issuance",
+              "example": "Local registration office"
+            },
+            {
+              "component": "Digital Certificates",
+              "function": "Bind public keys to identities",
+              "example": "X.509 certificates"
+            },
+            {
+              "component": "Certificate Repository",
+              "function": "Stores and distributes certificates",
+              "example": "LDAP directory"
+            },
+            {
+              "component": "Certificate Revocation List (CRL)",
+              "function": "Lists revoked certificates",
+              "example": "CRL distribution points"
+            }
+          ],
+          "certificate_contents": [
+            "Subject name",
+            "Public key",
+            "Issuer name",
+            "Validity period",
+            "Digital signature"
+          ],
+          "trust_models": [
+            "Hierarchical (tree)",
+            "Web of trust (PGP)",
+            "Cross-certification"
+          ],
+          "applications": [
+            "SSL/TLS certificates",
+            "Email encryption",
+            "Code signing",
+            "Smart cards"
+          ],
+          "visual_tip": "PKI = Digital passport system \ud83d\udec2 - CA is passport office, certificates are passports!"
+        },
+        {
+          "id": 6,
+          "question": "How do Digital Signatures work? Explain the signing and verification process.",
+          "definition": "Digital signatures use cryptographic techniques to provide authentication, integrity, and non-repudiation for digital documents.",
+          "signing_process": [
+            "1. Create hash of the document using secure hash function",
+            "2. Encrypt the hash with sender's private key",
+            "3. Attach the encrypted hash (signature) to the document",
+            "4. Send document + signature + digital certificate"
+          ],
+          "verification_process": [
+            "1. Receive document, signature, and certificate",
+            "2. Verify certificate validity and extract public key",
+            "3. Decrypt signature using sender's public key to get hash",
+            "4. Compute hash of received document",
+            "5. Compare computed hash with decrypted hash",
+            "6. If hashes match, signature is valid"
+          ],
+          "properties": [
+            "Authentication",
+            "Integrity",
+            "Non-repudiation",
+            "Timestamp"
+          ],
+          "standards": [
+            "PKCS#1 (RSA)",
+            "DSA",
+            "ECDSA",
+            "EdDSA"
+          ],
+          "visual_tip": "Digital signature = Electronic equivalent of handwritten signature + seal \ud83d\udcdd\ud83d\udd0f"
+        },
+        {
+          "id": 7,
+          "question": "Explain Key Management lifecycle and best practices.",
+          "definition": "Key management encompasses all processes and procedures for generating, distributing, storing, using, and destroying cryptographic keys throughout their lifecycle.",
+          "lifecycle_phases": [
+            "1. Key Generation: Create keys using secure random number generators",
+            "2. Key Distribution: Securely deliver keys to authorized parties",
+            "3. Key Storage: Protect keys from unauthorized access",
+            "4. Key Usage: Use keys for intended cryptographic operations",
+            "5. Key Archival: Long-term storage for data recovery",
+            "6. Key Destruction: Secure deletion when no longer needed"
+          ],
+          "best_practices": [
+            "Use certified random number generators",
+            "Implement proper access controls",
+            "Regular key rotation and renewal",
+            "Secure key backup and recovery",
+            "Hardware Security Modules (HSMs) for critical keys"
+          ],
+          "challenges": [
+            "Key distribution problem",
+            "Key escrow",
+            "Scalability",
+            "Interoperability"
+          ],
+          "standards": [
+            "FIPS 140-2",
+            "Common Criteria",
+            "X.509",
+            "PKCS standards"
+          ],
+          "visual_tip": "Key management = Bank vault operations \ud83c\udfe6\ud83d\udd10 - Strict procedures for valuable assets!"
+        },
+        {
+          "id": 8,
+          "question": "What is Perfect Forward Secrecy (PFS)? Why is it important?",
+          "definition": "Perfect Forward Secrecy ensures that session keys are not compromised even if long-term secret keys are compromised in the future.",
+          "how_it_works": [
+            "Generate ephemeral (temporary) key pairs for each session",
+            "Use ephemeral keys for actual data encryption",
+            "Delete ephemeral keys after session ends",
+            "Long-term keys only used for authentication"
+          ],
+          "importance": [
+            "Protects past communications from future key compromise",
+            "Limits damage from key breaches",
+            "Required for high-security applications",
+            "Mandated by many security standards"
+          ],
+          "implementation": [
+            "DHE (Diffie-Hellman Ephemeral)",
+            "ECDHE (Elliptic Curve DHE)",
+            "Session key rotation"
+          ],
+          "protocols": [
+            "TLS 1.3",
+            "Signal Protocol",
+            "IPSec IKEv2"
+          ],
+          "vs_without_pfs": [
+            "With PFS: Past sessions remain secure",
+            "Without PFS: All past sessions compromised"
+          ],
+          "visual_tip": "PFS = Burning bridges after crossing \ud83d\udd25\ud83c\udf09 - Can't go back even if enemy gets map!"
+        },
+        {
+          "id": 9,
+          "question": "Explain Cryptographic Attacks and countermeasures.",
+          "definition": "Cryptographic attacks are methods used to break or circumvent cryptographic security systems to recover plaintext or keys.",
+          "attack_types": [
+            {
+              "type": "Brute Force",
+              "description": "Try all possible keys",
+              "countermeasure": "Use longer keys"
+            },
+            {
+              "type": "Dictionary Attack",
+              "description": "Try common passwords",
+              "countermeasure": "Complex password policies"
+            },
+            {
+              "type": "Birthday Attack",
+              "description": "Find hash collisions",
+              "countermeasure": "Use secure hash functions"
+            },
+            {
+              "type": "Man-in-the-Middle",
+              "description": "Intercept communications",
+              "countermeasure": "Certificate pinning, HSTS"
+            },
+            {
+              "type": "Side-channel",
+              "description": "Analyze power, timing",
+              "countermeasure": "Hardware protections"
+            },
+            {
+              "type": "Chosen Plaintext",
+              "description": "Encrypt chosen texts",
+              "countermeasure": "Semantic security"
+            }
+          ],
+          "quantum_threat": [
+            "Shor's algorithm threatens RSA and ECC",
+            "Grover's algorithm reduces symmetric key strength",
+            "Need quantum-resistant algorithms"
+          ],
+          "countermeasures": [
+            "Key rotation",
+            "Algorithm agility",
+            "Defense in depth",
+            "Secure implementations"
+          ],
+          "visual_tip": "Crypto attacks = Different ways to pick locks \ud83d\udd13 - Need multiple protection layers!"
+        },
+        {
+          "id": 10,
+          "question": "What are Cryptographic Protocols? Explain key agreement and authentication protocols.",
+          "definition": "Cryptographic protocols define sequences of cryptographic operations to achieve security objectives like confidentiality, authentication, and integrity.",
+          "protocol_types": [
+            "Key Agreement: Establish shared secrets",
+            "Authentication: Verify identities",
+            "Key Distribution: Share keys securely",
+            "Non-repudiation: Prevent denial of actions"
+          ],
+          "key_agreement_protocols": [
+            {
+              "protocol": "Diffie-Hellman",
+              "security": "Discrete log problem",
+              "use": "Basic key exchange"
+            },
+            {
+              "protocol": "ECDH",
+              "security": "Elliptic curve discrete log",
+              "use": "Efficient key exchange"
+            },
+            {
+              "protocol": "Station-to-Station (STS)",
+              "security": "DH + authentication",
+              "use": "Authenticated key exchange"
+            }
+          ],
+          "authentication_protocols": [
+            {
+              "protocol": "Challenge-Response",
+              "method": "Prove key knowledge",
+              "example": "Kerberos"
+            },
+            {
+              "protocol": "Zero-Knowledge",
+              "method": "Prove without revealing",
+              "example": "Schnorr protocol"
+            },
+            {
+              "protocol": "PKI-based",
+              "method": "Certificate validation",
+              "example": "TLS handshake"
+            }
+          ],
+          "security_properties": [
+            "Mutual authentication",
+            "Perfect forward secrecy",
+            "Replay protection",
+            "Key confirmation"
+          ],
+          "visual_tip": "Crypto protocols = Dance steps \ud83d\udc83\ud83d\udd7a - Both parties must follow same choreography!"
+        }
+      ]
+    }
+  ]
+}

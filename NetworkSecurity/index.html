@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security Study Guide - Course 157610</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-color-scheme="dark">
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">🔐</span>
+                    Network Security
+                </h1>
+                <nav class="nav">
+                    <button class="nav-btn active" data-view="home">Home</button>
+                    <div class="dropdown">
+                        <button class="nav-btn dropdown-btn">Units ▼</button>
+                        <div class="dropdown-content">
+                            <button class="dropdown-item" data-view="unit" data-unit="1">Unit 1: Network Security Intro</button>
+                            <button class="dropdown-item" data-view="unit" data-unit="2">Unit 2: Cryptography</button>
+                            <button class="dropdown-item" data-view="unit" data-unit="3">Unit 3: Authentication</button>
+                            <button class="dropdown-item" data-view="unit" data-unit="4">Unit 4: Security Protocols</button>
+                            <button class="dropdown-item" data-view="unit" data-unit="5">Unit 5: Firewalls & IDS</button>
+                            <button class="dropdown-item" data-view="unit" data-unit="6">Unit 6: Emerging Trends</button>
+                        </div>
+                    </div>
+                    <button class="nav-btn" data-view="tools">Study Tools</button>
+                    <button class="nav-btn" data-view="progress">Progress</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search topics, concepts, or questions...">
+                <button id="searchBtn" class="search-btn">🔍</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            
+            <!-- Home View -->
+            <div id="homeView" class="view active">
+                <div class="hero">
+                    <h1>Network Security Syllabus Revision</h1>
+                    <p class="hero-subtitle">Course Code: 157610 | Credits: 3003 | Total Hours: 42</p>
+                    <div class="course-stats">
+                        <div class="stat">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Units</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">42</span>
+                            <span class="stat-label">Hours</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">60+</span>
+                            <span class="stat-label">Detailed Questions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="units-grid">
+                    <div class="unit-card" data-unit="1">
+                        <div class="unit-header">
+                            <h3>Unit 1: Introduction to Network Security</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>Security fundamentals, threats, vulnerability assessment, cybersecurity frameworks with detailed definitions, comparison tables, and visual tips - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+
+                    <div class="unit-card" data-unit="2">
+                        <div class="unit-header">
+                            <h3>Unit 2: Cryptography and Key Management</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>Symmetric & asymmetric cryptography, hash functions, PKI, digital signatures with detailed explanations, algorithm comparisons, and practical examples - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+
+                    <div class="unit-card" data-unit="3">
+                        <div class="unit-header">
+                            <h3>Unit 3: Authentication and Access Control</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>MFA, access control models, SSO, OAuth, Kerberos, Zero Trust with detailed definitions, model comparisons, and real-world applications - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+
+                    <div class="unit-card" data-unit="4">
+                        <div class="unit-header">
+                            <h3>Unit 4: Network Security Protocols</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>SSL/TLS, IPSec, VPNs, wireless security, email security with protocol comparisons, handshake details, and security analysis - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+
+                    <div class="unit-card" data-unit="5">
+                        <div class="unit-header">
+                            <h3>Unit 5: Firewalls, IDS, and Security Architectures</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>Firewall types, IDS/IPS, honeypots, secure network design with technology comparisons, architecture diagrams, and implementation details - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+
+                    <div class="unit-card" data-unit="6">
+                        <div class="unit-header">
+                            <h3>Unit 6: Emerging Trends and Case Studies</h3>
+                            <span class="unit-hours">7 hours</span>
+                        </div>
+                        <div class="unit-topics">
+                            <p>Cloud security, IoT security, AI/ML in cybersecurity, blockchain with trend analysis, case studies, and future implications - 10+ comprehensive study questions</p>
+                        </div>
+                        <div class="unit-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text">0% Complete</span>
+                        </div>
+                        <button class="btn btn--primary unit-btn">Start Learning</button>
+                    </div>
+                </div>
+
+                <div class="quick-access">
+                    <h2>Quick Access</h2>
+                    <div class="quick-access-grid">
+                        <button class="quick-btn" data-view="tools" data-tool="flashcards">
+                            <span class="quick-icon">🧠</span>
+                            Flashcards
+                        </button>
+                        <button class="quick-btn" data-view="tools" data-tool="quiz">
+                            <span class="quick-icon">📝</span>
+                            Practice Quiz
+                        </button>
+                        <button class="quick-btn" data-view="tools" data-tool="compare">
+                            <span class="quick-icon">⚖️</span>
+                            Compare Concepts
+                        </button>
+                        <button class="quick-btn" data-view="progress">
+                            <span class="quick-icon">📊</span>
+                            Progress Tracker
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unit View Template -->
+            <div id="unitView" class="view">
+                <div class="breadcrumb">
+                    <button class="breadcrumb-link" data-view="home">Home</button>
+                    <span class="breadcrumb-sep">›</span>
+                    <span id="currentUnit">Unit 1</span>
+                </div>
+                
+                <div class="unit-header-full">
+                    <h1 id="unitTitle">Unit Title</h1>
+                    <div class="unit-meta">
+                        <span class="unit-duration" id="unitHours">7 hours</span>
+                        <div class="unit-progress-full">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="unitProgressFill" data-progress="0"></div>
+                            </div>
+                            <span class="progress-text" id="unitProgressText">0% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit-content" id="unitContent">
+                    <!-- Dynamic comprehensive content will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Study Tools View -->
+            <div id="toolsView" class="view">
+                <div class="breadcrumb">
+                    <button class="breadcrumb-link" data-view="home">Home</button>
+                    <span class="breadcrumb-sep">›</span>
+                    <span>Study Tools</span>
+                </div>
+                
+                <h1>Study Tools</h1>
+                
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>🧠 Flashcards</h3>
+                        <p>Interactive flashcards with detailed definitions and visual tips from all units</p>
+                        <select id="flashcardCategory" class="form-control">
+                            <option value="all">All Units</option>
+                            <option value="1">Unit 1: Network Security Intro</option>
+                            <option value="2">Unit 2: Cryptography</option>
+                            <option value="3">Unit 3: Authentication</option>
+                            <option value="4">Unit 4: Security Protocols</option>
+                            <option value="5">Unit 5: Firewalls & IDS</option>
+                            <option value="6">Unit 6: Emerging Trends</option>
+                        </select>
+                        <button class="btn btn--primary" id="startFlashcards">Start Flashcards</button>
+                    </div>
+
+                    <div class="tool-card">
+                        <h3>📝 Practice Quiz</h3>
+                        <p>Comprehensive quizzes with detailed explanations (60+ questions available)</p>
+                        <select id="quizUnit" class="form-control">
+                            <option value="all">All Units</option>
+                            <option value="1">Unit 1: Network Security Intro</option>
+                            <option value="2">Unit 2: Cryptography</option>
+                            <option value="3">Unit 3: Authentication</option>
+                            <option value="4">Unit 4: Security Protocols</option>
+                            <option value="5">Unit 5: Firewalls & IDS</option>
+                            <option value="6">Unit 6: Emerging Trends</option>
+                        </select>
+                        <button class="btn btn--primary" id="startQuiz">Start Quiz</button>
+                    </div>
+
+                    <div class="tool-card">
+                        <h3>⚖️ Compare Concepts</h3>
+                        <p>Detailed side-by-side comparisons with tables and analysis</p>
+                        <select id="comparisonType" class="form-control">
+                            <option value="algorithms">DES vs AES vs RSA</option>
+                            <option value="access">DAC vs MAC vs RBAC</option>
+                            <option value="wireless">WEP vs WPA vs WPA2</option>
+                            <option value="firewall">Packet Filter vs Stateful vs Proxy</option>
+                            <option value="detection">IDS vs IPS</option>
+                        </select>
+                        <button class="btn btn--primary" id="showComparison">Show Comparison</button>
+                    </div>
+                </div>
+
+                <!-- Flashcard Interface -->
+                <div id="flashcardInterface" class="tool-interface hidden">
+                    <h2>Flashcards</h2>
+                    <div class="flashcard-container">
+                        <div class="flashcard" id="flashcard">
+                            <div class="flashcard-front" id="flashcardFront">
+                                Click to start
+                            </div>
+                            <div class="flashcard-back hidden" id="flashcardBack">
+                                Answer
+                            </div>
+                        </div>
+                        <div class="flashcard-controls">
+                            <button class="btn btn--secondary" id="flipCard">Flip Card</button>
+                            <button class="btn btn--primary" id="nextCard">Next Card</button>
+                            <button class="btn btn--outline" id="exitFlashcards">Exit</button>
+                        </div>
+                        <div class="flashcard-progress">
+                            <span id="cardProgress">Card 1 of 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Interface -->
+                <div id="quizInterface" class="tool-interface hidden">
+                    <h2>Practice Quiz</h2>
+                    <div class="quiz-container">
+                        <div class="quiz-question" id="quizQuestion">
+                            <h3 id="questionText">Question text will appear here</h3>
+                            <div class="quiz-options" id="quizOptions">
+                                <!-- Options will be generated dynamically -->
+                            </div>
+                        </div>
+                        <div class="quiz-controls">
+                            <button class="btn btn--primary" id="submitAnswer">Submit Answer</button>
+                            <button class="btn btn--secondary" id="nextQuestion">Next Question</button>
+                            <button class="btn btn--outline" id="exitQuiz">Exit Quiz</button>
+                        </div>
+                        <div class="quiz-progress">
+                            <span id="quizProgressText">Question 1 of 10</span>
+                            <span id="quizScore">Score: 0/0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Interface -->
+                <div id="comparisonInterface" class="tool-interface hidden">
+                    <h2>Concept Comparison</h2>
+                    <div class="comparison-container" id="comparisonContent">
+                        <!-- Comparison tables will be generated here -->
+                    </div>
+                    <button class="btn btn--outline" id="exitComparison">Back to Tools</button>
+                </div>
+            </div>
+
+            <!-- Progress View -->
+            <div id="progressView" class="view">
+                <div class="breadcrumb">
+                    <button class="breadcrumb-link" data-view="home">Home</button>
+                    <span class="breadcrumb-sep">›</span>
+                    <span>Progress</span>
+                </div>
+                
+                <h1>Your Progress</h1>
+                
+                <div class="progress-overview">
+                    <div class="progress-card">
+                        <h3>Overall Progress</h3>
+                        <div class="progress-bar large">
+                            <div class="progress-fill" id="overallProgress" data-progress="0"></div>
+                        </div>
+                        <p class="progress-text" id="overallProgressText">0% Complete</p>
+                    </div>
+                </div>
+
+                <div class="progress-details">
+                    <h2>Unit Progress</h2>
+                    <div class="progress-list" id="progressList">
+                        <!-- Progress details will be generated here -->
+                    </div>
+                </div>
+
+                <div class="bookmarks-section">
+                    <h2>Bookmarked Topics</h2>
+                    <div class="bookmarks-list" id="bookmarksList">
+                        <p class="no-bookmarks">No bookmarks yet. Click the bookmark icon on any topic to save it here.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Network Security Study Guide. Course Code: 157610 | 60+ Comprehensive Study Questions with Detailed Explanations</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
