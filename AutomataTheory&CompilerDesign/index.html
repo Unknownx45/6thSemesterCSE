@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automata Theory & Compiler Design - 157601</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="course-info">
+                    <h1>Automata Theory & Compiler Design</h1>
+                    <span class="course-code">157601</span>
+                </div>
+                <div class="header-controls">
+                    <div class="progress-summary">
+                        <span class="progress-text">Progress: <span id="overall-progress">0%</span></span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn--secondary" id="theme-toggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-tabs" id="nav-tabs">
+                <button class="nav-tab active" data-unit="overview">Overview</button>
+                <button class="nav-tab" data-unit="1">Unit 1</button>
+                <button class="nav-tab" data-unit="2">Unit 2</button>
+                <button class="nav-tab" data-unit="3">Unit 3</button>
+                <button class="nav-tab" data-unit="4">Unit 4</button>
+                <button class="nav-tab" data-unit="5">Unit 5</button>
+                <button class="nav-tab" data-unit="6">Unit 6</button>
+                <button class="nav-tab" data-unit="tools">Tools</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-content" id="sidebar-content">
+                        <!-- Dynamic sidebar content -->
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="content-area">
+                    <!-- Overview Section -->
+                    <section id="overview" class="content-section active">
+                        <div class="welcome-header">
+                            <h2>Welcome to Automata Theory & Compiler Design</h2>
+                            <p class="subtitle">Your comprehensive guide to mastering compiler construction and automata theory</p>
+                        </div>
+
+                        <div class="course-overview">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <h3>6</h3>
+                                    <p>Units</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>42</h3>
+                                    <p>Total Hours</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>60+</h3>
+                                    <p>Practice Questions</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>5</h3>
+                                    <p>Learning Tools</p>
+                                </div>
+                            </div>
+
+                            <div class="units-grid">
+                                <div class="unit-overview-card" data-unit="1">
+                                    <div class="unit-header">
+                                        <h3>Unit 1: Formal Language & Regular Expressions</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Learn about languages, DFA, NFA, and regular expression conversions</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="2">
+                                    <div class="unit-header">
+                                        <h3>Unit 2: Applications of Finite Automata</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Explore lexical analysis, context-free grammars, and LL parsing</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="3">
+                                    <div class="unit-header">
+                                        <h3>Unit 3: Bottom-up Parsing</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Master LR parsing, YACC, and syntax directed translation</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="4">
+                                    <div class="unit-header">
+                                        <h3>Unit 4: Context Sensitive Features</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Understand Chomsky hierarchy and type checking systems</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="5">
+                                    <div class="unit-header">
+                                        <h3>Unit 5: Run Time Storage</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Learn storage organization and code optimization techniques</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="6">
+                                    <div class="unit-header">
+                                        <h3>Unit 6: Code Generation</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Master machine code generation and register allocation</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Unit Content Sections -->
+                    <section id="unit-1" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 1: Formal Language and Regular Expressions</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">7 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="1">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Understand formal languages and their definitions</li>
+                                    <li>Learn about regular expressions and their applications</li>
+                                    <li>Master Deterministic and Non-deterministic Finite Automata</li>
+                                    <li>Convert between regular expressions, NFA, and DFA</li>
+                                </ul>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>1. Formal Languages</h3>
+                                <p><strong>Alphabet (Σ):</strong> A finite set of symbols.</p>
+                                <p><strong>String:</strong> A sequence of symbols from an alphabet.</p>
+                                <p><strong>Language:</strong> A set of strings over an alphabet.</p>
+                                
+                                <div class="example-box">
+                                    <h4>Example:</h4>
+                                    <p>If Σ = {a, b}, then some strings are: ε, a, b, aa, ab, ba, bb, ...</p>
+                                    <p>A possible language L = {a^n b^n | n ≥ 0}</p>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>2. Regular Expressions</h3>
+                                <p>Regular expressions are patterns that describe sets of strings.</p>
+                                
+                                <div class="concept-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Operator</th>
+                                                <th>Symbol</th>
+                                                <th>Description</th>
+                                                <th>Example</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Union</td>
+                                                <td>|</td>
+                                                <td>Either pattern</td>
+                                                <td>a|b matches 'a' or 'b'</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Concatenation</td>
+                                                <td>•</td>
+                                                <td>Sequential patterns</td>
+                                                <td>ab matches 'ab'</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kleene Star</td>
+                                                <td>*</td>
+                                                <td>Zero or more</td>
+                                                <td>a* matches '', 'a', 'aa', ...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>3. Finite Automata</h3>
+                                
+                                <h4>Deterministic Finite Automaton (DFA)</h4>
+                                <p>A DFA is a 5-tuple (Q, Σ, δ, q₀, F) where:</p>
+                                <ul>
+                                    <li>Q is a finite set of states</li>
+                                    <li>Σ is the input alphabet</li>
+                                    <li>δ: Q × Σ → Q is the transition function</li>
+                                    <li>q₀ ∈ Q is the start state</li>
+                                    <li>F ⊆ Q is the set of accepting states</li>
+                                </ul>
+
+                                <h4>Non-deterministic Finite Automaton (NFA)</h4>
+                                <p>Similar to DFA but allows multiple transitions for the same input symbol.</p>
+                            </div>
+
+                            <!-- Practice Questions -->
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-1-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Other Unit Sections (similar structure) -->
+                    <section id="unit-2" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 2: Applications of Finite Automata</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">7 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="2">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Apply finite automata to lexical analysis</li>
+                                    <li>Understand context-free grammars and parsing</li>
+                                    <li>Learn about parse trees and ambiguity</li>
+                                    <li>Master LL(1) parsing techniques</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-2-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Tools Section -->
+                    <section id="tools" class="content-section">
+                        <div class="tools-header">
+                            <h2>Learning Tools</h2>
+                            <p>Interactive tools to help you understand concepts better</p>
+                        </div>
+
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <h3>🔄 Regular Expression Tester</h3>
+                                <p>Test your regular expressions with sample inputs</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Regular Expression:</label>
+                                        <input type="text" class="form-control" id="regex-input" placeholder="e.g., (a|b)*">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Test String:</label>
+                                        <input type="text" class="form-control" id="regex-test-string" placeholder="e.g., ababab">
+                                    </div>
+                                    <button class="btn btn--primary" onclick="testRegex()">Test Match</button>
+                                    <div id="regex-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>📊 Grammar Validator</h3>
+                                <p>Check if your context-free grammar is valid</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Grammar Rules (one per line):</label>
+                                        <textarea class="form-control" id="grammar-input" rows="4" placeholder="S -> AB&#10;A -> a&#10;B -> b"></textarea>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="validateGrammar()">Validate</button>
+                                    <div id="grammar-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>🎯 Quick Quiz Generator</h3>
+                                <p>Generate random questions for any unit</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Unit:</label>
+                                        <select class="form-control" id="quiz-unit-select">
+                                            <option value="1">Unit 1: Formal Language & Regular Expressions</option>
+                                            <option value="2">Unit 2: Applications of Finite Automata</option>
+                                            <option value="3">Unit 3: Bottom-up Parsing</option>
+                                            <option value="4">Unit 4: Context Sensitive Features</option>
+                                            <option value="5">Unit 5: Run Time Storage</option>
+                                            <option value="6">Unit 6: Code Generation</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="generateQuiz()">Generate Quiz</button>
+                                    <div id="quiz-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>📚 Glossary</h3>
+                                <p>Quick reference for important terms</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Search Term:</label>
+                                        <input type="text" class="form-control" id="glossary-search" placeholder="e.g., DFA">
+                                    </div>
+                                    <button class="btn btn--primary" onclick="searchGlossary()">Search</button>
+                                    <div id="glossary-result" class="result-display"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Question Modal -->
+    <div id="question-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-question-title">Question</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-question-content"></div>
+                <div id="modal-question-options"></div>
+                <div id="modal-question-answer" class="answer-section hidden"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--secondary" onclick="closeModal()">Close</button>
+                <button class="btn btn--primary" id="show-answer-btn" onclick="showAnswer()">Show Answer</button>
+                <button class="btn btn--primary hidden" id="next-question-btn" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
