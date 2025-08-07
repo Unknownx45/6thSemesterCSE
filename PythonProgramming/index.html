@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming - 157603</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="course-info">
+                    <h1>Python Programming</h1>
+                    <span class="course-code">157603</span>
+                </div>
+                <div class="header-controls">
+                    <div class="progress-summary">
+                        <span class="progress-text">Progress: <span id="overall-progress">0%</span></span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn--secondary" id="theme-toggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-tabs" id="nav-tabs">
+                <button class="nav-tab active" data-unit="overview">Overview</button>
+                <button class="nav-tab" data-unit="1">Unit 1</button>
+                <button class="nav-tab" data-unit="2">Unit 2</button>
+                <button class="nav-tab" data-unit="3">Unit 3</button>
+                <button class="nav-tab" data-unit="4">Unit 4</button>
+                <button class="nav-tab" data-unit="5">Unit 5</button>
+                <button class="nav-tab" data-unit="6">Unit 6</button>
+                <button class="nav-tab" data-unit="tools">Tools</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-content" id="sidebar-content">
+                        <!-- Dynamic sidebar content -->
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="content-area">
+                    <!-- Overview Section -->
+                    <section id="overview" class="content-section active">
+                        <div class="welcome-header">
+                            <h2>Welcome to Python Programming</h2>
+                            <p class="subtitle">Your comprehensive guide to mastering Python programming fundamentals and advanced concepts</p>
+                        </div>
+
+                        <div class="course-overview">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <h3>6</h3>
+                                    <p>Units</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>42</h3>
+                                    <p>Total Hours</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>60+</h3>
+                                    <p>Practice Questions</p>
+                                </div>
+                                <div class="stat-card">
+                                    <h3>7</h3>
+                                    <p>Learning Tools</p>
+                                </div>
+                            </div>
+
+                            <div class="units-grid">
+                                <div class="unit-overview-card" data-unit="1">
+                                    <div class="unit-header">
+                                        <h3>Unit 1: Input and Output</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Learn Python basics, identifiers, variables, data types, operators, and dynamic typing</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="2">
+                                    <div class="unit-header">
+                                        <h3>Unit 2: Control Flow, Functions, Loops and Strings</h3>
+                                        <span class="unit-hours">9 hrs</span>
+                                    </div>
+                                    <p>Master control structures, functions, loops, string operations and formatting</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="3">
+                                    <div class="unit-header">
+                                        <h3>Unit 3: Lists</h3>
+                                        <span class="unit-hours">4 hrs</span>
+                                    </div>
+                                    <p>Explore list creation, operations, slicing, methods, and deletion</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="4">
+                                    <div class="unit-header">
+                                        <h3>Unit 4: Dictionaries, Tuples and Sets</h3>
+                                        <span class="unit-hours">8 hrs</span>
+                                    </div>
+                                    <p>Understand dictionaries, tuples, sets, their operations and relationships</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="5">
+                                    <div class="unit-header">
+                                        <h3>Unit 5: Files</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Learn file handling, text files, binary files, pickle, CSV, and os modules</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="unit-overview-card" data-unit="6">
+                                    <div class="unit-header">
+                                        <h3>Unit 6: Object Oriented Design and Python Modules</h3>
+                                        <span class="unit-hours">7 hrs</span>
+                                    </div>
+                                    <p>Master OOP concepts, modules, statistics, numpy, TensorFlow, and Keras</p>
+                                    <div class="unit-progress">
+                                        <div class="progress-bar small">
+                                            <div class="progress-fill" data-progress="unit-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Unit Content Sections -->
+                    <section id="unit-1" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 1: Input and Output</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">7 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="1">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Understand Python identifiers and variable naming conventions</li>
+                                    <li>Learn about different data types in Python</li>
+                                    <li>Master input/output operations using print() and input()</li>
+                                    <li>Understand operators and type conversions</li>
+                                    <li>Explore Python's dynamic typing system</li>
+                                </ul>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>1. Python Identifiers and Variables</h3>
+                                <p><strong>Identifier:</strong> A name used to identify variables, functions, classes, modules, etc.</p>
+                                <p><strong>Rules for identifiers:</strong></p>
+                                <ul>
+                                    <li>Must start with a letter (a-z, A-Z) or underscore (_)</li>
+                                    <li>Can contain letters, digits, and underscores</li>
+                                    <li>Case-sensitive</li>
+                                    <li>Cannot be a Python keyword</li>
+                                </ul>
+                                
+                                <div class="example-box">
+                                    <h4>Example:</h4>
+                                    <pre><code># Valid identifiers
+name = "Python"
+_private = 10
+count1 = 5
+
+# Invalid identifiers
+# 1st = 10  # starts with digit
+# class = "OOP"  # Python keyword</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>2. Data Types</h3>
+                                <p>Python has several built-in data types:</p>
+                                
+                                <div class="concept-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Description</th>
+                                                <th>Example</th>
+                                                <th>Function</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>int</td>
+                                                <td>Integer numbers</td>
+                                                <td>10, -5, 0</td>
+                                                <td>int()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>float</td>
+                                                <td>Floating point numbers</td>
+                                                <td>3.14, -2.5</td>
+                                                <td>float()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>str</td>
+                                                <td>String of characters</td>
+                                                <td>"Hello", 'Python'</td>
+                                                <td>str()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>bool</td>
+                                                <td>Boolean values</td>
+                                                <td>True, False</td>
+                                                <td>bool()</td>
+                                            </tr>
+                                            <tr>
+                                                <td>complex</td>
+                                                <td>Complex numbers</td>
+                                                <td>3+4j, 2-1j</td>
+                                                <td>complex()</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>3. Input and Output Operations</h3>
+                                
+                                <h4>Output using print()</h4>
+                                <div class="example-box">
+                                    <h4>Example:</h4>
+                                    <pre><code>print("Hello, World!")
+print("Name:", "Python", "Version:", 3.9)
+print(f"The answer is {42}")
+
+# Output:
+# Hello, World!
+# Name: Python Version: 3.9
+# The answer is 42</code></pre>
+                                </div>
+
+                                <h4>Input using input()</h4>
+                                <div class="example-box">
+                                    <h4>Example:</h4>
+                                    <pre><code>name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+print(f"Hello {name}, you are {age} years old")</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>4. Operators</h3>
+                                <p>Python supports various types of operators:</p>
+                                
+                                <div class="concept-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Operators</th>
+                                                <th>Example</th>
+                                                <th>Result</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Arithmetic</td>
+                                                <td>+, -, *, /, //, %, **</td>
+                                                <td>10 // 3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Comparison</td>
+                                                <td>==, !=, <, >, <=, >=</td>
+                                                <td>5 > 3</td>
+                                                <td>True</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Logical</td>
+                                                <td>and, or, not</td>
+                                                <td>True and False</td>
+                                                <td>False</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Assignment</td>
+                                                <td>=, +=, -=, *=, /=</td>
+                                                <td>x += 5</td>
+                                                <td>x = x + 5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="topic-section">
+                                <h3>5. Type Conversions</h3>
+                                <p>Python supports both implicit and explicit type conversions:</p>
+                                
+                                <div class="example-box">
+                                    <h4>Explicit Type Conversion:</h4>
+                                    <pre><code># String to int
+num_str = "123"
+num_int = int(num_str)  # 123
+
+# Float to int
+num_float = 3.14
+num_int = int(num_float)  # 3
+
+# Int to string
+age = 25
+age_str = str(age)  # "25"</code></pre>
+                                </div>
+                            </div>
+
+                            <!-- Practice Questions -->
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-1-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Other Unit Sections (similar structure) -->
+                    <section id="unit-2" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 2: Control Flow, Functions, Loops and Strings</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">9 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="2">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Master conditional statements (if, elif, else)</li>
+                                    <li>Understand function definition and calling</li>
+                                    <li>Learn about while and for loops</li>
+                                    <li>Explore string operations and methods</li>
+                                    <li>Understand string formatting techniques</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-2-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="unit-3" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 3: Lists</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">4 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="3">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Understand list creation and initialization</li>
+                                    <li>Learn list operations and indexing</li>
+                                    <li>Master list slicing techniques</li>
+                                    <li>Explore built-in list methods</li>
+                                    <li>Understand list deletion operations</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-3-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="unit-4" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 4: Dictionaries, Tuples and Sets</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">8 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="4">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Master dictionary operations and methods</li>
+                                    <li>Understand tuple characteristics and operations</li>
+                                    <li>Learn about sets and their operations</li>
+                                    <li>Explore relationships between data structures</li>
+                                    <li>Understand zip function and frozen sets</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-4-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="unit-5" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 5: Files</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">7 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="5">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Understand file handling operations</li>
+                                    <li>Learn text file reading and writing</li>
+                                    <li>Master binary file operations</li>
+                                    <li>Explore pickle module for serialization</li>
+                                    <li>Understand CSV file handling and os/os.path modules</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-5-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="unit-6" class="content-section">
+                        <div class="unit-header-section">
+                            <h2>Unit 6: Object Oriented Design and Python Modules</h2>
+                            <div class="unit-meta">
+                                <span class="unit-duration">7 Hours</span>
+                                <button class="btn btn--secondary bookmark-btn" data-unit="6">
+                                    <span>⭐</span> Bookmark
+                                </button>
+                            </div>
+                        </div>
+                        <div class="unit-content">
+                            <div class="topic-section">
+                                <h3>Learning Objectives</h3>
+                                <ul>
+                                    <li>Master OOP concepts: classes, objects, inheritance</li>
+                                    <li>Understand module creation and importing</li>
+                                    <li>Learn statistics module for mathematical operations</li>
+                                    <li>Explore numpy for numerical computing</li>
+                                    <li>Get introduced to TensorFlow and Keras for machine learning</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="questions-section">
+                                <h3>Practice Questions</h3>
+                                <div id="unit-6-questions" class="questions-container">
+                                    <!-- Questions will be loaded by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Tools Section -->
+                    <section id="tools" class="content-section">
+                        <div class="tools-header">
+                            <h2>Python Learning Tools</h2>
+                            <p>Interactive tools to help you understand Python concepts better</p>
+                        </div>
+
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <h3>🐍 Python Code Runner</h3>
+                                <p>Test your Python code with syntax highlighting</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Python Code:</label>
+                                        <textarea class="form-control code-editor" id="python-code-input" rows="6" placeholder="# Enter your Python code here&#10;print('Hello, Python!')"></textarea>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="runPythonCode()">Run Code</button>
+                                    <div id="python-code-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>📝 String Method Cheatsheet</h3>
+                                <p>Quick reference for Python string methods</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Search Method:</label>
+                                        <input type="text" class="form-control" id="string-method-search" placeholder="e.g., upper, split, replace">
+                                    </div>
+                                    <button class="btn btn--primary" onclick="searchStringMethod()">Search</button>
+                                    <div id="string-method-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>🔧 List Comprehension Builder</h3>
+                                <p>Interactive tool to build and understand list comprehensions</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Expression:</label>
+                                        <input type="text" class="form-control" id="lc-expression" placeholder="x*2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Variable and Range:</label>
+                                        <input type="text" class="form-control" id="lc-range" placeholder="x in range(1, 6)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Condition (optional):</label>
+                                        <input type="text" class="form-control" id="lc-condition" placeholder="if x % 2 == 0">
+                                    </div>
+                                    <button class="btn btn--primary" onclick="buildListComprehension()">Build</button>
+                                    <div id="lc-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>📁 File Handling Simulator</h3>
+                                <p>Practice file operations in a virtual environment</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Operation:</label>
+                                        <select class="form-control" id="file-operation">
+                                            <option value="create">Create File</option>
+                                            <option value="read">Read File</option>
+                                            <option value="write">Write to File</option>
+                                            <option value="append">Append to File</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Filename:</label>
+                                        <input type="text" class="form-control" id="file-name" placeholder="example.txt">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Content:</label>
+                                        <textarea class="form-control" id="file-content" rows="3" placeholder="Enter file content..."></textarea>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="simulateFileOperation()">Execute</button>
+                                    <div id="file-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>🎯 Quick Quiz Generator</h3>
+                                <p>Generate random questions for any unit</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Select Unit:</label>
+                                        <select class="form-control" id="quiz-unit-select">
+                                            <option value="1">Unit 1: Input and Output</option>
+                                            <option value="2">Unit 2: Control Flow, Functions, Loops and Strings</option>
+                                            <option value="3">Unit 3: Lists</option>
+                                            <option value="4">Unit 4: Dictionaries, Tuples and Sets</option>
+                                            <option value="5">Unit 5: Files</option>
+                                            <option value="6">Unit 6: Object Oriented Design and Python Modules</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="generateQuiz()">Generate Quiz</button>
+                                    <div id="quiz-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>🏗️ Class Diagram Visualizer</h3>
+                                <p>Visualize OOP class relationships</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Class Definition:</label>
+                                        <textarea class="form-control" id="class-definition" rows="4" placeholder="class Student:&#10;    def __init__(self, name):&#10;        self.name = name"></textarea>
+                                    </div>
+                                    <button class="btn btn--primary" onclick="visualizeClass()">Visualize</button>
+                                    <div id="class-diagram-result" class="result-display"></div>
+                                </div>
+                            </div>
+
+                            <div class="tool-card">
+                                <h3>📚 Python Glossary</h3>
+                                <p>Quick reference for Python terms and concepts</p>
+                                <div class="tool-interface">
+                                    <div class="form-group">
+                                        <label class="form-label">Search Term:</label>
+                                        <input type="text" class="form-control" id="glossary-search" placeholder="e.g., list, dictionary, function">
+                                    </div>
+                                    <button class="btn btn--primary" onclick="searchGlossary()">Search</button>
+                                    <div id="glossary-result" class="result-display"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Question Modal -->
+    <div id="question-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-question-title">Question</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-question-content"></div>
+                <div id="modal-question-options"></div>
+                <div id="modal-question-answer" class="answer-section hidden"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--secondary" onclick="closeModal()">Close</button>
+                <button class="btn btn--primary" id="show-answer-btn" onclick="showAnswer()">Show Answer</button>
+                <button class="btn btn--primary hidden" id="next-question-btn" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
